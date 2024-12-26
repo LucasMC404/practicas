@@ -5,7 +5,8 @@ import useGameStore from "../store/GameStore"
 import { Answer } from "../types/answer"
 
 const SelectionModule = () => {
-    const [setChoice, setStep] = useGameStore(state => [state.setChoice, state.setStep]);
+    const setChoice = useGameStore(state => state.setChoice);
+    const setStep = useGameStore(state => state.setStep);
 
     const onClickChoice = (choice: Answer) => {
         setChoice(choice);

@@ -24,7 +24,7 @@ const PlayModule = () => {
 
     if (countDown > 0) {
         return (
-            <div className="text-center m-10">
+            <div className="text-center block my-20">
                 <span className="text-rose-600 font-bold text-9xl">{countDown}</span>
             </div>
         )

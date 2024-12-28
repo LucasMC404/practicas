@@ -14,7 +14,7 @@ const SelectionModule = () => {
     }
 
     return (
-        <div className="flex row justify-around">
+        <div className="my-20 flex justify-around ">
             {ANSWER.map((answer) => <Choice choice={answer} onClick={onClickChoice} />)}
         </div>
 
